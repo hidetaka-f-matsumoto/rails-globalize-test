@@ -1,7 +1,7 @@
 #
 ## Setup application with Docker
 
-```
+```sh
 docker build -t hide/rails-globalize-test .
 docker create -t --name rails-globalize-test \
                 -v `pwd`:/var/myapp \
@@ -17,14 +17,14 @@ bundle
 
 ## Migration of existing data
 
-```
+```sh
 rake translations:migrate CLASS=Author
 rake translations:migrate CLASS=Book
 ```
 
 ## Check translations
 
-```
+```ruby
 /var/myapp # rails c
 Loading development environment (Rails 5.1.4)
 [1] pry(main)> book = Book.first
