@@ -1,4 +1,4 @@
-#
+# Testing globalize-gem, migration of existing data
 ## Setup application with Docker
 
 ```sh
