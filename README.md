@@ -13,6 +13,7 @@ docker exec -it rails-globalize-test sh
 
 ```
 bundle
+rake db:migrate
 ```
 
 ## Migration of existing data
