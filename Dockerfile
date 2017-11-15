@@ -1,6 +1,7 @@
 FROM ruby:2.4-alpine3.6
 
-RUN apk add --no-cache bash nodejs tzdata less
+RUN apk update
+RUN apk add --no-cache bash nodejs tzdata less sqlite-dev sqlite-libs
 RUN apk add --no-cache alpine-sdk \
       --virtual .build_deps libxml2-dev libxslt-dev zlib zlib-dev readline-dev
 
